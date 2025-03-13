@@ -11,10 +11,11 @@ namespace WebApplication1
 
         public static Dictionary<string, Dictionary<int, CalendarTask>> LoadData()
         {
-            // If the file doesn't exist, return an empty dictionary
+            // If the file doesn't exist, create an empty file
             if (!File.Exists(filePath))
             {
-                return new Dictionary<string, Dictionary<int, CalendarTask>>();
+                // Create an empty file with an empty dictionary serialized as JSON
+                SaveData(new Dictionary<string, Dictionary<int, CalendarTask>>());
             }
 
             // Read data from the file
@@ -23,7 +24,8 @@ namespace WebApplication1
             // Deserialize and return the data
             try
             {
-                return JsonConvert.DeserializeObject<Dictionary<string, Dictionary<int, CalendarTask>>>(jsonData) ?? new Dictionary<string, Dictionary<int, CalendarTask>>();
+                return JsonConvert.DeserializeObject<Dictionary<string, Dictionary<int, CalendarTask>>>(jsonData)
+                       ?? new Dictionary<string, Dictionary<int, CalendarTask>>();
             }
             catch (Exception)
             {

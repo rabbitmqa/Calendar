@@ -39,3 +39,4 @@ C:\Users\Eddie\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref
 C:\Users\Eddie\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Eddie\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Eddie\source\repos\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Eddie\source\repos\WebApplication1\WebApplication1\bin\Debug\net8.0\calendarData.json
