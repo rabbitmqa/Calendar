@@ -249,7 +249,7 @@ namespace WebApplication1.Controllers
 
     // Function to save data to the server
     function saveDataToServer() {
-      fetch('https://localhost:7204/api/calendar', {
+      fetch('https://calendartaskerapp-awe7dpa5engueccr.israelcentral-01.azurewebsites.net/api/calendar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(calendarData),
@@ -268,7 +268,7 @@ namespace WebApplication1.Controllers
 
     // Load saved data from server and render the calendar
     function loadDataFromServer() {
-      fetch('https://localhost:7204/api/calendar')
+      fetch('https://calendartaskerapp-awe7dpa5engueccr.israelcentral-01.azurewebsites.net/api/calendar')
         .then(response => response.json())
         .then(data => {
           calendarData = data || {};
