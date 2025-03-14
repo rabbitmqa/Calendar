@@ -4,5 +4,6 @@
     {
         public string Task { get; set; }
         public string Reminder { get; set; }
+        public DateOnly DateOnly { get; set; }
     }
 }
